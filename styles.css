@@ -1,0 +1,28 @@
+.container {
+    height: 25px;
+    background-color: #cccccc;
+    position: relative;
+    border-radius: 7px;
+}
+
+.container .progress-bar {
+    position: absolute;
+    height: 100%;
+    background-color: rgb(125, 44, 255);
+    border-radius: 7px;
+}
+
+#play-animation {
+    animation: progress-bar-animation 4s forwards;
+}
+
+/* CSS Animation is by @keyframes */
+
+@keyframes progress-bar-animation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
